@@ -196,6 +196,11 @@ article {
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
+/* social-media icons */
+.socials-icons{
+  color: var(--orange-yellow-crayola);
+
+}
 
 .icon-box::before {
   content: "";
