@@ -16,4 +16,4 @@ vCard is a fully responsive personal portfolio website, responsive for all devic
 
 ## License
 
-This project is **free to use** and does not contains any license.
+This project is **free to use** and is licensed under [MIT License](LICENSE).
