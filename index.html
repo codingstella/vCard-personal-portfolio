@@ -1,1201 +1,1738 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
+            <p class="title">Web developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Web developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >richard@example.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+12133522795" class="contact-link"
+                  >+1 (213) 352-2795</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
+                <time datetime="1982-06-23">June 23, 1982</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Sacramento, California, USA</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon class="socials-icons" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
-          </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon class="socials-icons" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-          <li class="contact-item">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon
+                  class="socials-icons"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="mode-toggle-btn" class="defult-panel mode-toggle-btn">
+          <div id="mood-btn" class="toggle-mode dark">
+            <img
+              id="mood-icon"
+              class="active"
+              src="assets/images/sun.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </aside>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon class = "socials-icons" name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon class = "socials-icons" name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon class = "socials-icons" name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm Creative Director and UI/UX Designer from Sydney, Australia,
+              working in web development and print media. I enjoy turning
+              complex problems into simple, beautiful and intuitive designs.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
+            <p>
+              My job is to build your website so that it is functional and
+              user-friendly but at the same time attractive. Moreover, I add
+              personal touch to your product and make sure that is eye-catching
+              and easy to use. My aim is to bring across your message and
+              identity in the most creative way. I created web design for many
+              famous brand companies.
+            </p>
+          </section>
 
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <svg
+                    width="40"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.15"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M40.6377 19.814C40.4183 19.7228 40.1658 19.7732 39.9978 19.9416L38.2394 21.7057V9.71161C38.2394 9.38628 37.9766 9.12261 37.6523 9.12261H33.1413L34.7788 7.47985L34.7795 7.47906L36.3573 5.89617C36.6954 5.55704 36.8816 5.10591 36.8816 4.62624C36.8816 4.14658 36.6954 3.6956 36.3573 3.35631L34.5328 1.52591C34.1948 1.18677 33.7451 1 33.2669 1C32.7888 1 32.3392 1.18677 32.0011 1.52591L30.4225 3.10958L28.515 5.02322L24.4288 9.12254H6.2047V3.29564C6.2047 2.9703 5.94181 2.70665 5.61759 2.70665C3.07149 2.70681 1 4.7848 1 7.33924V32.3559C1 32.3994 1.005 32.4417 1.01391 32.4825C1.095 33.5664 1.56242 34.5734 2.3436 35.3379C3.1786 36.1549 4.28087 36.6048 5.44743 36.6048H23.3879L20.0091 39.9946C19.8412 40.163 19.791 40.4162 19.8818 40.6364C19.9727 40.8565 20.1868 41 20.4243 41H40.413C40.7372 41 41.0001 40.7364 41.0001 40.411V20.3582C41.0001 20.12 40.857 19.9052 40.6377 19.814ZM32.8315 2.35897C33.0715 2.11804 33.4626 2.11804 33.7026 2.35897L35.5272 4.18945C35.7673 4.4303 35.7673 4.82242 35.5272 5.06335L34.3638 6.23053L31.668 3.52615L32.8315 2.35897ZM30.8377 4.35913L33.5334 7.06343L32.4562 8.14417L29.7606 5.43987L30.8377 4.35913ZM18.3967 21.76L16.715 22.3556L15.5945 21.2315L16.1882 19.5444L18.3967 21.76ZM35.8293 30.1707L30.1707 35.8293C30.1077 35.8923 30.1523 36 30.2414 36H36V30.2414C36 30.1523 35.8923 30.1077 35.8293 30.1707ZM16 18.5L19.5 22L32.5 9L29 5.5L16 18.5Z"
+                      fill="url(#paint0_linear)"
+                    />
+                    <path
+                      d="M36.3998 29.2549C36.1804 29.1637 35.9279 29.2141 35.76 29.3825L29.3439 35.8193C29.176 35.9878 29.1257 36.2411 29.2167 36.4612C29.3075 36.6814 29.5217 36.8248 29.7591 36.8248H36.1752C36.4995 36.8248 36.7623 36.5611 36.7623 36.2358V29.799C36.7622 29.5609 36.6192 29.3461 36.3998 29.2549ZM31.1763 35.6469L35.5879 31.221V35.6469H31.1763Z"
+                      fill="url(#paint1_linear)"
+                      stroke="url(#paint2_linear)"
+                      stroke-width="0.25"
+                    />
+                    <path
+                      d="M40.6377 19.814C40.4183 19.7228 40.1658 19.7732 39.9978 19.9416L38.2394 21.7057V9.71161C38.2394 9.38628 37.9766 9.12261 37.6523 9.12261H33.1413L34.7788 7.47985C34.7791 7.47962 34.7793 7.47929 34.7795 7.47906L36.3573 5.89617C36.6954 5.55704 36.8816 5.10591 36.8816 4.62624C36.8816 4.14658 36.6954 3.6956 36.3573 3.35631L34.5328 1.52591C34.1948 1.18677 33.7451 1 33.2669 1C32.7888 1 32.3392 1.18677 32.0011 1.52591L30.4225 3.10958L28.515 5.02322L24.4288 9.12254H6.2047V3.29564C6.2047 2.9703 5.94181 2.70665 5.61759 2.70665C3.07149 2.70681 1 4.7848 1 7.33924V32.3559C1 32.3994 1.005 32.4417 1.01391 32.4825C1.095 33.5664 1.56242 34.5734 2.3436 35.3379C3.1786 36.1549 4.28087 36.6048 5.44743 36.6048H23.3879L20.0091 39.9946C19.8412 40.163 19.791 40.4162 19.8818 40.6364C19.9727 40.8565 20.1868 41 20.4243 41H40.413C40.7372 41 41.0001 40.7364 41.0001 40.411V20.3582C41.0001 20.12 40.857 19.9052 40.6377 19.814ZM32.8315 2.35897C33.0715 2.11804 33.4626 2.11804 33.7026 2.35897L35.5272 4.18945C35.7673 4.4303 35.7673 4.82242 35.5272 5.06335L34.3638 6.23053L31.668 3.52615L32.8315 2.35897ZM30.8377 4.35913L33.5334 7.06343L32.4562 8.14417L29.7606 5.43987L30.8377 4.35913ZM39.826 26.9764H38.7428C38.4185 26.9764 38.1557 27.2401 38.1557 27.5654C38.1557 27.8908 38.4185 28.1544 38.7428 28.1544H39.826V29.9293H38.7428C38.4185 29.9293 38.1557 30.1931 38.1557 30.5184C38.1557 30.8437 38.4185 31.1074 38.7428 31.1074H39.826V32.8822H38.7428C38.4185 32.8822 38.1557 33.1458 38.1557 33.4712C38.1557 33.7965 38.4185 34.0602 38.7428 34.0602H39.826V35.8351H38.7428C38.4185 35.8351 38.1557 36.0988 38.1557 36.4241C38.1557 36.7495 38.4185 37.0131 38.7428 37.0131H39.826V39.8222H21.8416L27.7719 33.873C28.0012 33.6428 28.0012 33.27 27.7719 33.04C27.7456 33.0135 27.7173 32.9906 27.6877 32.9703C27.4591 32.8133 27.1446 32.8363 26.9415 33.04L24.5622 35.427H5.44751C3.66688 35.427 2.23344 34.0324 2.17703 32.2493C2.18039 32.1373 2.18906 32.0263 2.20297 31.9166C2.20305 31.916 2.20313 31.9154 2.20321 31.9147C2.20977 31.8626 2.21766 31.8107 2.22664 31.7592C2.22766 31.7533 2.22875 31.7473 2.22977 31.7415C2.23797 31.6955 2.24719 31.6497 2.25727 31.6041C2.26008 31.5914 2.26305 31.5787 2.26602 31.5661C2.27492 31.5275 2.28453 31.4892 2.29485 31.451C2.30047 31.4303 2.30633 31.4099 2.31235 31.3893C2.32094 31.3593 2.32985 31.3295 2.3393 31.2999C2.34875 31.2704 2.35883 31.2411 2.36907 31.2119C2.37617 31.1915 2.38321 31.171 2.39086 31.1507C2.40516 31.1121 2.42032 31.074 2.43594 31.0361C2.44039 31.0252 2.44477 31.0142 2.44938 31.0033C2.46946 30.9562 2.49032 30.9098 2.51235 30.8638C2.51328 30.8619 2.51414 30.8599 2.51508 30.858C2.9743 29.9046 3.85751 29.1938 4.91743 28.9732C4.9204 28.9726 4.92337 28.9719 4.92634 28.9712C4.97493 28.9613 5.02399 28.9528 5.07337 28.9449C5.08157 28.9436 5.08977 28.9418 5.09813 28.9406C5.14274 28.9338 5.18782 28.9285 5.2329 28.9234C5.24556 28.922 5.25813 28.92 5.27087 28.9188C5.31438 28.9144 5.35829 28.9115 5.4022 28.9087C5.4161 28.9078 5.43001 28.9064 5.44392 28.9057C5.50142 28.9028 5.55938 28.9013 5.61759 28.9013C5.94181 28.9013 6.2047 28.6377 6.2047 28.3123V24.0416C6.2047 23.7163 5.94181 23.4527 5.61759 23.4527C5.29337 23.4527 5.03048 23.7163 5.03048 24.0416V27.7604C4.03907 27.8862 3.11883 28.3298 2.39321 29.0407C2.31688 29.1154 2.24453 29.1932 2.17406 29.2722V7.33924C2.17406 5.63526 3.41047 4.21531 5.0304 3.93488V21.6858C5.0304 22.011 5.29329 22.2748 5.61751 22.2748C5.94173 22.2748 6.20462 22.011 6.20462 21.6858V10.3006H23.2547L20.009 13.5567C19.7797 13.7868 19.7797 14.1597 20.009 14.3897C20.2383 14.6196 20.61 14.6196 20.8393 14.3897L25.0872 10.1281C25.0873 10.128 25.0874 10.1278 25.0875 10.1277L28.9301 6.27278L31.6257 8.97715L31.3094 9.29441C31.3092 9.29465 31.3089 9.29488 31.3087 9.29513L19.4705 21.1715L16.7749 18.4672L19.1083 16.1263C19.3376 15.8961 19.3376 15.5233 19.1083 15.2933C18.879 15.0634 18.5073 15.0634 18.2781 15.2933L15.5294 18.0507C15.5147 18.0655 15.501 18.081 15.4881 18.097C15.4838 18.1024 15.48 18.1081 15.4759 18.1136C15.4676 18.1247 15.4595 18.1358 15.4519 18.1474C15.4476 18.1542 15.4437 18.1611 15.4396 18.168C15.4332 18.179 15.4269 18.1902 15.4212 18.2015C15.4175 18.2088 15.4141 18.2164 15.4107 18.224C15.4054 18.2355 15.4006 18.2473 15.3961 18.259C15.3946 18.2632 15.3925 18.2671 15.391 18.2712L14.2472 21.522L13.4674 23.7384C13.4571 23.7678 13.4496 23.7978 13.4441 23.828H11.4916C11.1674 23.828 10.9045 24.0916 10.9045 24.4169C10.9045 24.7423 11.1674 25.0059 11.4916 25.0059H27.7505C28.0748 25.0059 28.3376 24.7423 28.3376 24.4169C28.3376 24.0916 28.0748 23.828 27.7505 23.828H16.0854L19.6659 22.5599C19.6689 22.5589 19.6717 22.5574 19.6746 22.5563C19.6886 22.5511 19.7022 22.5452 19.7157 22.5391C19.7211 22.5366 19.7265 22.5342 19.7318 22.5316C19.7458 22.5246 19.7596 22.5168 19.7732 22.5085C19.7776 22.5058 19.7821 22.5034 19.7864 22.5007C19.8006 22.4916 19.8143 22.4816 19.8279 22.4711C19.8312 22.4686 19.8347 22.4663 19.838 22.4636C19.8543 22.4504 19.8703 22.4363 19.8855 22.421L31.9671 10.3007H37.0652V22.8837L28.667 31.3089C28.4377 31.5391 28.4377 31.9119 28.667 32.1419C28.6813 32.1563 28.6962 32.1698 28.7116 32.1823C28.8193 32.2704 28.9508 32.3145 29.0822 32.3145C29.2136 32.3145 29.3451 32.2704 29.4527 32.1823C29.4681 32.1698 29.483 32.1563 29.4973 32.1419L29.4976 32.1417L39.826 21.7799V26.9764ZM18.3967 21.76L16.715 22.3556L15.5945 21.2315L16.1882 19.5444L18.3967 21.76Z"
+                      fill="url(#paint3_linear)"
+                      stroke="url(#paint4_linear)"
+                      stroke-width="0.25"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="3.26667"
+                        y1="1"
+                        x2="37.8"
+                        y2="39.1334"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear"
+                        x1="29.602"
+                        y1="29.21"
+                        x2="36.1781"
+                        y2="36.4484"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint2_linear"
+                        x1="29.602"
+                        y1="29.21"
+                        x2="36.1781"
+                        y2="36.4484"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint3_linear"
+                        x1="3.26667"
+                        y1="1"
+                        x2="37.8"
+                        y2="39.1334"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint4_linear"
+                        x1="3.26667"
+                        y1="1"
+                        x2="37.8"
+                        y2="39.1334"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <svg
+                    width="40"
+                    height="32"
+                    viewBox="0 0 40 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.15"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 1C1.89543 1 1 1.89543 1 3V28C1 29.1046 1.89543 30 3 30H37C38.1046 30 39 29.1046 39 28V3C39 1.89543 38.1046 1 37 1H3ZM36 9H4V28H36V9Z"
+                      fill="url(#paint0_linear)"
+                    />
+                    <path
+                      d="M37.6172 0.375H2.38281C1.06903 0.375 0 1.44403 0 2.75781V29.2422C0 30.556 1.06903 31.625 2.38281 31.625H37.6172C38.931 31.625 40 30.556 40 29.2422V2.75781C40 1.44403 38.931 0.375 37.6172 0.375ZM38.4375 29.2422C38.4375 29.6945 38.0695 30.0625 37.6172 30.0625H2.38281C1.93054 30.0625 1.5625 29.6945 1.5625 29.2422V2.75781C1.5625 2.30554 1.93054 1.9375 2.38281 1.9375H37.6172C38.0695 1.9375 38.4375 2.30554 38.4375 2.75781V29.2422Z"
+                      fill="url(#paint1_linear)"
+                    />
+                    <path
+                      d="M14.9219 5.79156H35.0781C35.5096 5.79156 35.8594 5.44183 35.8594 5.01031C35.8594 4.5791 35.5096 4.22906 35.0781 4.22906H14.9219C14.4904 4.22906 14.1406 4.5791 14.1406 5.01031C14.1406 5.44183 14.4904 5.79156 14.9219 5.79156Z"
+                      fill="url(#paint2_linear)"
+                    />
+                    <path
+                      d="M3.99231 5.3094C4.01184 5.3564 4.03595 5.40157 4.06403 5.44368C4.0921 5.48671 4.12506 5.52669 4.16107 5.56239C4.30634 5.70857 4.50775 5.79158 4.71313 5.79158C4.76471 5.79158 4.81567 5.7867 4.86633 5.77663C4.91638 5.76656 4.96552 5.7516 5.01251 5.73207C5.05951 5.71254 5.10468 5.68843 5.14679 5.66035C5.18982 5.63136 5.2298 5.5984 5.2655 5.5627C5.30243 5.52669 5.33447 5.48671 5.36316 5.44398C5.39154 5.40157 5.41565 5.3564 5.43518 5.3094C5.45471 5.2618 5.46967 5.21266 5.47974 5.16322C5.48981 5.11256 5.49438 5.06099 5.49438 5.01033C5.49438 4.95937 5.48981 4.90779 5.47974 4.85805C5.46967 4.808 5.45471 4.75856 5.43518 4.71187C5.41565 4.66426 5.39154 4.61879 5.36316 4.57668C5.33447 4.53365 5.30243 4.49397 5.2655 4.45796C5.2298 4.42195 5.18982 4.3893 5.14679 4.36092C5.10468 4.33284 5.05951 4.30873 5.01251 4.2892C4.96552 4.26967 4.91638 4.25471 4.86633 4.24464C4.76563 4.2242 4.66187 4.2242 4.56085 4.24464C4.5108 4.25471 4.46167 4.26967 4.41498 4.2892C4.36707 4.30873 4.3219 4.33284 4.27979 4.36092C4.23676 4.3893 4.19678 4.42195 4.16107 4.45796C4.12506 4.49397 4.0921 4.53365 4.06403 4.57668C4.03595 4.61879 4.01184 4.66426 3.99231 4.71187C3.97278 4.75856 3.95782 4.808 3.94775 4.85805C3.93738 4.90779 3.93188 4.95937 3.93188 5.01033C3.93188 5.06099 3.93738 5.11256 3.94775 5.16322C3.95782 5.21266 3.97278 5.2618 3.99231 5.3094Z"
+                      fill="url(#paint3_linear)"
+                    />
+                    <path
+                      d="M7.11731 5.3094C7.13684 5.3564 7.16095 5.40157 7.18903 5.44368C7.2171 5.48671 7.25006 5.52669 7.28607 5.56239C7.43134 5.70857 7.63275 5.79158 7.83813 5.79158C7.88971 5.79158 7.94067 5.7867 7.99133 5.77663C8.04138 5.76656 8.09052 5.7516 8.13751 5.73207C8.18451 5.71254 8.22968 5.68843 8.27179 5.66035C8.31482 5.63136 8.3548 5.5984 8.39142 5.5627C8.42743 5.52669 8.45947 5.48671 8.48816 5.44398C8.51654 5.40157 8.54065 5.3564 8.56018 5.3094C8.57971 5.2618 8.59467 5.21266 8.60474 5.16322C8.61481 5.11256 8.61938 5.06099 8.61938 5.01033C8.61938 4.95937 8.61481 4.90779 8.60474 4.85805C8.59467 4.808 8.57971 4.75856 8.56018 4.71187C8.54065 4.66426 8.51654 4.61879 8.48816 4.57668C8.45947 4.53365 8.42743 4.49397 8.39142 4.45796C8.3548 4.42195 8.31482 4.3893 8.27179 4.36092C8.22968 4.33284 8.18451 4.30873 8.13751 4.2892C8.09052 4.26967 8.04138 4.25471 7.99133 4.24464C7.89063 4.2242 7.78687 4.2242 7.68585 4.24464C7.6358 4.25471 7.58667 4.26967 7.53998 4.2892C7.49207 4.30873 7.4469 4.33284 7.40479 4.36092C7.36176 4.3893 7.32178 4.42195 7.28607 4.45796C7.25006 4.49397 7.2171 4.53365 7.18903 4.57668C7.16095 4.61879 7.13684 4.66426 7.11731 4.71187C7.09778 4.75856 7.08282 4.808 7.07275 4.85805C7.06238 4.90779 7.05688 4.95937 7.05688 5.01033C7.05688 5.06099 7.06238 5.11256 7.07275 5.16322C7.08282 5.21266 7.09778 5.2618 7.11731 5.3094Z"
+                      fill="url(#paint4_linear)"
+                    />
+                    <path
+                      d="M10.2423 5.3094C10.2618 5.3564 10.2859 5.40157 10.314 5.44368C10.3421 5.48671 10.3751 5.52669 10.4111 5.56239C10.4468 5.5984 10.4868 5.63136 10.5298 5.66005C10.5719 5.68843 10.6171 5.71254 10.665 5.73207C10.7117 5.7516 10.7608 5.76656 10.8109 5.77663C10.8609 5.7867 10.9125 5.79128 10.9631 5.79128C11.0147 5.79128 11.0657 5.7867 11.1163 5.77663C11.1664 5.76656 11.2155 5.7516 11.2625 5.73207C11.3095 5.71254 11.3547 5.68843 11.3977 5.66005C11.4398 5.63136 11.4798 5.5984 11.5164 5.56239C11.5524 5.52669 11.5845 5.48671 11.6132 5.44368C11.6415 5.40157 11.6656 5.3564 11.6852 5.3094C11.7047 5.2618 11.7197 5.21266 11.7297 5.16322C11.7398 5.11256 11.7444 5.06099 11.7444 5.01003C11.7444 4.95937 11.7398 4.90779 11.7297 4.85774C11.7197 4.80769 11.7047 4.75856 11.6852 4.71187C11.6656 4.66396 11.6415 4.61879 11.6132 4.57668C11.5845 4.53365 11.5524 4.49367 11.5164 4.45796C11.4798 4.42195 11.4398 4.38899 11.3977 4.36092C11.3547 4.33284 11.3095 4.30873 11.2625 4.2892C11.2155 4.26967 11.1664 4.25471 11.1163 4.24464C11.0156 4.2242 10.9119 4.2242 10.8109 4.24464C10.7608 4.25471 10.7117 4.26967 10.665 4.2892C10.6171 4.30873 10.5719 4.33284 10.5298 4.36092C10.4868 4.38899 10.4468 4.42195 10.4111 4.45796C10.3751 4.49367 10.3421 4.53365 10.314 4.57668C10.2859 4.61879 10.2618 4.66396 10.2423 4.71187C10.2228 4.75856 10.2078 4.80769 10.1978 4.85774C10.1874 4.90779 10.1819 4.95937 10.1819 5.01003C10.1819 5.06099 10.1874 5.11256 10.1978 5.16322C10.2078 5.21266 10.2228 5.2618 10.2423 5.3094Z"
+                      fill="url(#paint5_linear)"
+                    />
+                    <path
+                      d="M22.7154 13.739C22.344 13.5192 21.8649 13.6425 21.6452 14.0139L17.0099 21.8524C16.7901 22.2238 16.9131 22.7029 17.2845 22.9223C17.4093 22.9962 17.5464 23.0316 17.6816 23.0316C17.9486 23.0316 18.2089 22.8942 18.3548 22.6477L22.9901 14.8092C23.2098 14.4378 23.0868 13.9587 22.7154 13.739Z"
+                      fill="url(#paint6_linear)"
+                    />
+                    <path
+                      d="M12.9769 16.0351V15.2462C12.9769 14.8095 13.3321 14.454 13.7688 14.454H13.7798C14.2113 14.454 14.561 14.1042 14.561 13.6727C14.561 13.2415 14.2113 12.8915 13.7798 12.8915H13.7688C12.4706 12.8915 11.4144 13.948 11.4144 15.2462V16.0351C11.4144 16.3192 11.2978 16.5963 11.0946 16.795L10.0823 17.7853C9.93305 17.9312 9.84852 18.1307 9.8473 18.3395C9.84638 18.5482 9.92878 18.7487 10.0765 18.8964L11.108 19.9276C11.307 20.1263 11.4174 20.3906 11.4196 20.6719L11.4251 21.4907C11.4342 22.7801 12.4904 23.8293 13.7798 23.8293C14.2113 23.8293 14.561 23.4792 14.561 23.048C14.561 22.6165 14.2113 22.2668 13.7798 22.2668C13.3458 22.2668 12.9906 21.9137 12.9876 21.48L12.9821 20.6613C12.9772 19.9664 12.7037 19.3133 12.2127 18.8226L11.7397 18.3499L12.1874 17.9119C12.6891 17.4209 12.9769 16.737 12.9769 16.0351Z"
+                      fill="url(#paint7_linear)"
+                    />
+                    <path
+                      d="M27.023 20.6857V21.4745C27.023 21.9113 26.6678 22.2668 26.2311 22.2668H26.2201C25.7886 22.2668 25.4388 22.6165 25.4388 23.048C25.4388 23.4792 25.7886 23.8293 26.2201 23.8293H26.2311C27.5293 23.8293 28.5855 22.7728 28.5855 21.4745V20.6857C28.5855 20.4016 28.7021 20.1245 28.9053 19.9258L29.9176 18.9355C30.0668 18.7896 30.1514 18.59 30.1523 18.3813C30.1535 18.1725 30.0711 17.972 29.9234 17.8243L28.8919 16.7932C28.6929 16.5945 28.5821 16.3299 28.5803 16.0488L28.5745 15.23C28.5657 13.9407 27.5095 12.8918 26.2201 12.8918C25.7886 12.8918 25.4388 13.2415 25.4388 13.673C25.4388 14.1042 25.7886 14.4543 26.2201 14.4543C26.6537 14.4543 27.0093 14.8071 27.012 15.2407L27.0178 16.0595C27.0227 16.7541 27.2958 17.4072 27.7872 17.8982L28.2602 18.3709L27.8125 18.8088C27.3108 19.2996 27.023 19.9838 27.023 20.6857Z"
+                      fill="url(#paint8_linear)"
+                    />
+                    <path
+                      d="M36.0443 8.13531H3.95569C3.52417 8.13531 3.17444 8.48535 3.17444 8.91656V27.6666C3.17444 28.0981 3.52417 28.4478 3.95569 28.4478H13.2553C13.6868 28.4478 14.0366 28.0981 14.0366 27.6666C14.0366 27.2354 13.6868 26.8853 13.2553 26.8853H4.73694V9.69781H35.2631V26.8853H19.5312C19.0997 26.8853 18.75 27.2354 18.75 27.6666C18.75 28.0981 19.0997 28.4478 19.5312 28.4478H36.0443C36.4758 28.4478 36.8256 28.0981 36.8256 27.6666V8.91656C36.8256 8.48535 36.4758 8.13531 36.0443 8.13531Z"
+                      fill="url(#paint9_linear)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="3.15333"
+                        y1="1"
+                        x2="26.6886"
+                        y2="35.0542"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear"
+                        x1="2.26667"
+                        y1="0.375001"
+                        x2="27.8327"
+                        y2="36.511"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint2_linear"
+                        x1="15.3714"
+                        y1="4.22906"
+                        x2="15.5472"
+                        y2="6.9288"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint3_linear"
+                        x1="4.02043"
+                        y1="4.22931"
+                        x2="5.36917"
+                        y2="5.71887"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint4_linear"
+                        x1="7.14543"
+                        y1="4.22931"
+                        x2="8.49417"
+                        y2="5.71887"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint5_linear"
+                        x1="10.2704"
+                        y1="4.22931"
+                        x2="11.6189"
+                        y2="5.71884"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint6_linear"
+                        x1="17.2521"
+                        y1="13.6301"
+                        x2="25.0143"
+                        y2="19.281"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color) "
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint7_linear"
+                        x1="10.1144"
+                        y1="12.8915"
+                        x2="17.4785"
+                        y2="16.3959"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint8_linear"
+                        x1="25.7059"
+                        y1="12.8918"
+                        x2="33.0696"
+                        y2="16.3959"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint9_linear"
+                        x1="5.08133"
+                        y1="8.13532"
+                        x2="19.9152"
+                        y2="35.2721"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 22 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.15"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 1C1.89543 1 1 1.89543 1 3V37C1 38.1046 1.89543 39 3 39H18.9C20.0046 39 20.9 38.1046 20.9 37V3C20.9 1.89543 20.0046 1 18.9 1H15.6631V2H6.23676V1H3Z"
+                      fill="url(#paint0_linear)"
+                    />
+                    <path
+                      d="M8.50854 35.6745C8.13501 35.6745 7.83221 35.9773 7.83221 36.3508C7.83221 36.7243 8.13501 37.0271 8.50854 37.0271V35.6745ZM13.4633 37.0271C13.8368 37.0271 14.1396 36.7243 14.1396 36.3508C14.1396 35.9773 13.8368 35.6745 13.4633 35.6745V37.0271ZM0.400024 29.4141C0.400024 29.7876 0.702827 30.0904 1.07635 30.0904C1.44988 30.0904 1.75268 29.7876 1.75268 29.4141H0.400024ZM1.75268 32.387C1.75268 32.0134 1.44988 31.7106 1.07635 31.7106C0.702827 31.7106 0.400024 32.0134 0.400024 32.387H1.75268ZM20.2192 7.61303C20.2192 7.98656 20.522 8.28936 20.8955 8.28936C21.269 8.28936 21.5718 7.98656 21.5718 7.61303H20.2192ZM21.5718 10.5859C21.5718 10.2124 21.269 9.90956 20.8955 9.90956C20.522 9.90956 20.2192 10.2124 20.2192 10.5859H21.5718ZM18.48 38.6473H3.49181V40H18.48V38.6473ZM3.49181 1.35266H6.52662V0H3.49181V1.35266ZM5.8503 1.69206H7.20295V0.676328H5.8503V1.69206ZM7.49281 3.33457H14.4791V1.98191H7.49281V3.33457ZM6.52662 1.35266H15.4452V0H6.52662V1.35266ZM15.4452 1.35266H18.48V0H15.4452V1.35266ZM16.1216 1.69206V0.676328H14.7689V1.69206H16.1216ZM8.50854 37.0271H13.4633V35.6745H8.50854V37.0271ZM1.75268 29.4141V3.09179H0.400024V29.4141H1.75268ZM1.75268 36.9082V32.387H0.400024V36.9082H1.75268ZM20.2192 3.09179V7.61303H21.5718V3.09179H20.2192ZM20.2192 10.5859V36.9082H21.5718V10.5859H20.2192ZM14.4791 3.33457C15.3862 3.33457 16.1216 2.5992 16.1216 1.69206H14.7689C14.7689 1.85214 14.6392 1.98191 14.4791 1.98191V3.33457ZM3.49181 38.6473C2.53132 38.6473 1.75268 37.8687 1.75268 36.9082H0.400024C0.400024 38.6157 1.78427 40 3.49181 40V38.6473ZM18.48 40C20.1876 40 21.5718 38.6157 21.5718 36.9082H20.2192C20.2192 37.8687 19.4405 38.6473 18.48 38.6473V40ZM18.48 1.35266C19.4405 1.35266 20.2192 2.13129 20.2192 3.09179H21.5718C21.5718 1.38424 20.1876 0 18.48 0V1.35266ZM5.8503 1.69206C5.8503 2.5992 6.58567 3.33457 7.49281 3.33457V1.98191C7.33272 1.98191 7.20295 1.85214 7.20295 1.69206H5.8503ZM3.49181 0C1.78427 0 0.400024 1.38424 0.400024 3.09179H1.75268C1.75268 2.13129 2.53132 1.35266 3.49181 1.35266V0Z"
+                      fill="url(#paint1_linear)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="2.12767"
+                        y1="1"
+                        x2="30.7018"
+                        y2="17.5237"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear"
+                        x1="1.59976"
+                        y1="8.08974e-07"
+                        x2="31.8368"
+                        y2="17.6727"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <svg
+                    width="42"
+                    height="32"
+                    viewBox="0 0 42 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.15"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.5 6.89825C1.5 5.79369 2.39543 4.89825 3.5 4.89825H38.3C39.4046 4.89825 40.3 5.79369 40.3 6.89825V27.8871C40.3 28.9917 39.4046 29.8871 38.3 29.8871H24.2108C28.4393 28.5311 31.5 24.5686 31.5 19.8916C31.5 14.0952 26.799 9.39625 21 9.39625C15.201 9.39625 10.5 14.0952 10.5 19.8916C10.5 24.5686 13.5607 28.5311 17.7892 29.8871H3.5C2.39543 29.8871 1.5 28.9917 1.5 27.8871V6.89825ZM21 24.8894C23.7614 24.8894 26 22.6518 26 19.8916C26 17.1314 23.7614 14.8938 21 14.8938C18.2386 14.8938 16 17.1314 16 19.8916C16 22.6518 18.2386 24.8894 21 24.8894Z"
+                      fill="url(#paint0_linear)"
+                    />
+                    <path
+                      d="M2.04688 21.5655C2.04688 21.8199 1.84039 22.0263 1.58594 22.0263C1.33149 22.0263 1.125 21.8199 1.125 21.5655V19.1966C1.125 18.942 1.33145 18.7359 1.58594 18.7359C1.84043 18.7359 2.04688 18.942 2.04688 19.1966V21.5655Z"
+                      fill="url(#paint1_linear)"
+                      stroke="url(#paint2_linear)"
+                      stroke-width="0.25"
+                    />
+                    <path
+                      d="M38.7448 4.72371H36.3178V4.44734C36.3178 3.66461 35.6806 3.02738 34.8972 3.02738H34.6484V2.31999C34.6484 1.53695 34.0109 0.900024 33.2278 0.900024H30.4285C29.6454 0.900024 29.0079 1.53695 29.0079 2.31999V3.02738H28.7591C27.9758 3.02738 27.3386 3.6643 27.3386 4.44734V4.72371H18.9984V4.11363C18.9984 3.3309 18.3612 2.69366 17.5778 2.69366H16.448C15.6649 2.69366 15.0274 3.33059 15.0274 4.11363V4.72371H13.6566V3.27934C13.6566 2.49661 13.0194 1.85938 12.236 1.85938H6.09828C5.31519 1.85938 4.67768 2.49661 4.67768 3.27934V4.72371H3.25525C2.01166 4.72371 1 5.73523 1 6.97797V16.646C1 16.9696 1.26245 17.2316 1.58594 17.2316C1.90943 17.2316 2.17188 16.9696 2.17188 16.646V11.0838H5.37867C5.63654 12.0276 6.50172 12.7237 7.5265 12.7237C8.55159 12.7237 9.41646 12.0276 9.67433 11.0838H14.3277C11.6247 13.1148 9.87331 16.3458 9.87331 19.9782C9.87331 22.363 10.6283 24.5745 11.9116 26.3874H2.17188V24.1161C2.17188 23.7925 1.90943 23.5304 1.58594 23.5304C1.26245 23.5304 1 23.7925 1 24.1161V27.7796C1 29.0226 2.01166 30.0339 3.25525 30.0339H16.2491C17.6907 30.7172 19.3014 31.1 21 31.1C22.6993 31.1 24.3103 30.7169 25.7522 30.033C25.7568 30.0333 25.7611 30.0339 25.7657 30.0339H38.7448C39.9884 30.0339 41.0001 29.0226 41.0001 27.7796V6.97797C41.0001 5.73523 39.9884 4.72371 38.7448 4.72371ZM30.1797 2.31999C30.1797 2.18303 30.2914 2.07138 30.4288 2.07138H33.2278C33.3649 2.07138 33.4766 2.18272 33.4766 2.31999V3.02738H30.1801V2.31999H30.1797ZM28.5104 4.44734C28.5104 4.31038 28.6221 4.19873 28.7595 4.19873H34.8972C35.0342 4.19873 35.1459 4.31038 35.1459 4.44734V4.72371H28.5107V4.44734H28.5104ZM16.1993 4.11363C16.1993 3.97667 16.311 3.86502 16.448 3.86502H17.5778C17.7151 3.86502 17.8265 3.97667 17.8265 4.11363V4.72371H16.1993V4.11363ZM5.84956 3.27934C5.84956 3.14238 5.96125 3.03073 6.09828 3.03073H12.2363C12.3733 3.03073 12.485 3.14238 12.485 3.27934V4.72371H5.84956V3.27934ZM7.5265 11.5523C6.94514 11.5523 6.47181 11.0795 6.47181 10.4982C6.47181 9.91703 6.94514 9.44391 7.5265 9.44391C8.10817 9.44391 8.58119 9.91703 8.58119 10.4982C8.58119 11.0795 8.10817 11.5523 7.5265 11.5523ZM9.67433 9.91246C9.41646 8.96866 8.55159 8.27256 7.5265 8.27256C6.50141 8.27256 5.63654 8.96866 5.37867 9.91246H2.17188V6.97797C2.17188 6.381 2.65802 5.89507 3.25525 5.89507H38.7448C39.3421 5.89507 39.8282 6.381 39.8282 6.97797V9.91246H38.0844V7.78449C38.0844 7.46115 37.822 7.19882 37.4985 7.19882H32.0453C31.7218 7.19882 31.4594 7.46115 31.4594 7.78449V9.91246H25.7266C24.2627 9.22551 22.651 8.85671 21 8.85671C19.31 8.85671 17.7072 9.23587 16.2713 9.91246H9.67433ZM32.6312 9.91246V8.37017H36.9125V9.91246H32.6312ZM3.25525 28.8625C2.65802 28.8625 2.17188 28.3766 2.17188 27.7796V27.5588H12.8665C13.3099 28.034 13.7942 28.4705 14.3139 28.8625H3.25525ZM11.0452 19.9785C11.0452 14.4917 15.5111 10.0281 21 10.0281C23.847 10.0281 26.5637 11.2512 28.454 13.3838C28.6685 13.626 29.0387 13.6486 29.281 13.4339C29.5233 13.2194 29.5456 12.8494 29.3311 12.6071C28.8284 12.0401 28.273 11.5313 27.6761 11.0838H39.8282V26.3874H30.0885C30.9833 25.1233 31.6205 23.6652 31.9247 22.0897H33.4576C34.3219 22.0897 35.0253 21.3868 35.0253 20.5227V19.0637C35.0253 18.1995 34.3222 17.4967 33.4576 17.4967H31.8448C31.6318 16.5648 31.301 15.661 30.8569 14.816C30.7065 14.5296 30.3522 14.4191 30.0659 14.5699C29.7794 14.7202 29.6689 15.074 29.8193 15.3605C30.5621 16.7747 30.9549 18.3716 30.9549 19.9785C30.9549 25.4652 26.4892 29.9289 21 29.9289C15.5111 29.9289 11.0452 25.4649 11.0452 19.9785ZM32.0483 18.6678H33.4576C33.6758 18.6678 33.8535 18.8453 33.8535 19.0634V20.5227C33.8535 20.7408 33.6758 20.9184 33.4576 20.9184H32.0865C32.1127 20.6084 32.1268 20.2948 32.1268 19.9782C32.1268 19.5399 32.1002 19.1022 32.0483 18.6678ZM38.7448 28.8625H27.6861C28.2059 28.4705 28.6902 28.034 29.1336 27.5588H39.8282V27.7796C39.8282 28.3766 39.3421 28.8625 38.7448 28.8625Z"
+                      fill="url(#paint3_linear)"
+                      stroke="url(#paint4_linear)"
+                      stroke-width="0.25"
+                    />
+                    <path
+                      d="M13.2415 19.9785C13.2415 15.7022 16.7219 12.223 21.0001 12.223C25.2783 12.223 28.7587 15.7022 28.7587 19.9785C28.7587 24.2545 25.2783 27.7336 21.0001 27.7336C16.7219 27.7336 13.2415 24.2545 13.2415 19.9785ZM14.1633 19.9785C14.1633 23.7467 17.2302 26.8121 21.0001 26.8121C24.77 26.8121 27.8368 23.7467 27.8368 19.9785C27.8368 16.2103 24.77 13.1445 21.0001 13.1445C17.2302 13.1445 14.1633 16.2103 14.1633 19.9785Z"
+                      fill="url(#paint5_linear)"
+                      stroke="url(#paint6_linear)"
+                      stroke-width="0.25"
+                    />
+                    <path
+                      d="M15.6189 19.9785C15.6189 17.0126 18.033 14.5995 20.9999 14.5995C23.9671 14.5995 26.3812 17.0126 26.3812 19.9785C26.3812 22.9443 23.9671 25.3571 20.9999 25.3571C18.0327 25.3571 15.6189 22.9443 15.6189 19.9785ZM16.5408 19.9785C16.5408 22.4363 18.541 24.4356 20.9999 24.4356C23.4588 24.4356 25.4593 22.4363 25.4593 19.9785C25.4593 17.5204 23.4588 15.521 20.9999 15.521C18.541 15.521 16.5408 17.5204 16.5408 19.9785Z"
+                      fill="url(#paint7_linear)"
+                      stroke="url(#paint8_linear)"
+                      stroke-width="0.25"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="3.69867"
+                        y1="4.89825"
+                        x2="22.5688"
+                        y2="37.2522"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear"
+                        x1="1.17724"
+                        y1="18.7359"
+                        x2="2.78931"
+                        y2="19.2346"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint2_linear"
+                        x1="1.17724"
+                        y1="18.7359"
+                        x2="2.78931"
+                        y2="19.2346"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint3_linear"
+                        x1="3.26667"
+                        y1="0.900025"
+                        x2="27.6816"
+                        y2="36.6089"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint4_linear"
+                        x1="3.26667"
+                        y1="0.900025"
+                        x2="27.6816"
+                        y2="36.6089"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint5_linear"
+                        x1="14.1208"
+                        y1="12.223"
+                        x2="27.511"
+                        y2="27.0155"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint6_linear"
+                        x1="14.1208"
+                        y1="12.223"
+                        x2="27.511"
+                        y2="27.0155"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint7_linear"
+                        x1="16.2288"
+                        y1="14.5995"
+                        x2="25.5157"
+                        y2="24.8592"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint8_linear"
+                        x1="16.2288"
+                        y1="14.5995"
+                        x2="25.5157"
+                        y2="24.8592"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.259336"
+                          stop-color="var(--icon-color)"
+                        />
+                        <stop offset="1" stop-color="var(--icon-color)" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
 
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    I make high-quality photos of any category at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Daniel lewis
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jessica miller
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Emily evans
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Henry william"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Henry william
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <svg
+                  width="34"
+                  height="23"
+                  viewBox="0 0 34 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.63091 0.144315L11.1066 1.03792C11.3675 1.19594 11.4272 1.54856 11.2349 1.78536C9.08005 4.43892 7.12216 7.31629 7.12195 10.8825C10.0635 10.8825 13.0949 13.3058 13.0949 16.4084C13.0949 20.7423 9.61052 23.4414 6.12633 22.939C2.64214 22.4367 0.58078 19.9249 0.153573 16.9107C-0.826125 9.99852 2.98637 3.77393 8.59945 0.151692C8.91222 -0.0501455 9.3125 -0.0485027 9.63091 0.144315ZM30.5361 0.144315L32.0117 1.03792C32.2727 1.19594 32.3323 1.54856 32.14 1.78536C29.9852 4.43892 28.0273 7.31629 28.0271 10.8825C30.9687 10.8825 34 13.3058 34 16.4084C34 20.7423 30.5157 23.4414 27.0315 22.939C23.5473 22.4367 21.4859 19.9249 21.0587 16.9107C20.079 9.99852 23.8915 3.77393 29.5046 0.151692C29.8174 -0.0501455 30.2177 -0.0485027 30.5361 0.144315Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="1.92667"
+                      y1="4.65138e-07"
+                      x2="19.7024"
+                      y2="29.0178"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0.259336" stop-color="var(--icon-color)" />
+                      <stop offset="1" stop-color="var(--icon-color)" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <section class="clients">
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-          <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University school of the arts
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2007 — 2008</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">New york academy of art</h4>
 
-              <span>2007 — 2008</span>
+                <span>2006 — 2007</span>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+                <p class="timeline-text">
+                  Ratione voluptatem sequi nesciunt, facere quisquams facere
+                  menda ossimus, omnis voluptas assumenda est omnis..
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  High school of art and design
+                </h4>
 
-            <li class="timeline-item">
+                <span>2002 — 2004</span>
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+                <p class="timeline-text">
+                  Duis aute irure dolor in reprehenderit in voluptate, quila
+                  voluptas mag odit aut fugit, sed consequuntur magni dolores
+                  eos.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <span>2006 — 2007</span>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Creative director</h4>
 
-          <ol class="timeline-list">
+                <span>2015 — Present</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Nemo enim ipsam voluptatem blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et qvuas molestias
+                  exceptur.
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Art director</h4>
 
-              <span>2015 — Present</span>
+                <span>2013 — 2015</span>
 
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web designer</h4>
 
-            <li class="timeline-item">
+                <span>2010 — 2013</span>
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <span>2013 — 2015</span>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+                  <data value="80">80%</data>
+                </div>
 
-            </li>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-            <li class="timeline-item">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Graphic design</h5>
+                  <data value="70">70%</data>
+                </div>
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
 
-              <span>2010 — 2013</span>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Branding</h5>
+                  <data value="90">90%</data>
+                </div>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="50">50%</data>
+                </div>
 
-          </ol>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
 
-                <h3 class="project-title">Finance</h3>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-                <p class="project-category">Web development</p>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+                  <h3 class="project-title">Finance</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Orizon</h3>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Web development</p>
+                  <h3 class="project-title">Orizon</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Fundo</h3>
 
-                <h3 class="project-title">Fundo</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
 
-                <p class="project-category">Web design</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+                  <h3 class="project-title">Brawlhalla</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Applications</p>
+                  <h3 class="project-title">DSM.</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
+                  <h3 class="project-title">MetaSpark</h3>
 
-                <h3 class="project-title">DSM.</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
 
-                <p class="project-category">Web design</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+                  <h3 class="project-title">Summary</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">MetaSpark</h3>
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Web design</p>
+                  <h3 class="project-title">Task Manager</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Arrival</h3>
 
-                <h3 class="project-title">Summary</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item">
-              <a href="#">
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
