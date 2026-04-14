@@ -1,7 +1,7 @@
 vCard - Personal Portfolio
 
 # sidebar
-
+# done from my end
 alt = Richard hanrick
 Richard hanrick
 Web developer
